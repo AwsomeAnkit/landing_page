@@ -4,8 +4,14 @@
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
-    padding: 20px;
+    padding: 1.2rem 2rem;
     text-align: left;
 }
 
@@ -16,9 +22,70 @@
 }
 
 .icon > img {
-    width: 4px;
+    width: 45px !important;
 }
 
-.head-name{
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.reference {
+    display: flex;
+    gap: 15px;
+}
+
+.reference > button {
+    border-radius: 99px;
+    border: none;
+    background: #fff;
+}
+
+.reference > button > img {
+    height: 18px;
+    width: 18px;
+    padding: 10px;
+}
+
+.reference > button:hover {
+    background: #f4f4f4;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    z-index: -5;
+}
+
+.banner > img {
+    width: 100% !important;
+}
+
+.banner-content {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-content > div {
+    width: 50%;
+}
+
+.arrival-wrapper {
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.arrival {
+    padding: 20px;
+    background: #FFF3E3;
+    border-radius: 12px;
 }
