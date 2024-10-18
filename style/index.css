@@ -7,6 +7,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,47 +166,111 @@ h1{
     margin-top: 80px;
 }
 
-/*.Product-conatiner{
+.Product-container{
     display: grid;
-    justify-content: left;
-    grid-template-columns: 150px 150px 150px 150px;
-    gap: 20px;
-    margin: 0 auto;
-}*/
-
-.items{
-    border-radius: 8px;
-    padding: 20px;
-    overflow: hidden;
-    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-.items > img{
-    width: 20%;
-    height: 50vhvh;
-    object-fit: cover;
+.product-card {
+    position: relative;
+    background: #F4F5F7;
+    width: min-content;
+    cursor: pointer;
 }
 
-.items > p {
-    font-size: medium;
-    font-weight: 200;
+.product-card:hover > div:nth-child(1) {
+    display: flex;
+    align-items: center;
 }
 
-.price{
-    font-size: 20px;
-    font-weight: bold;
+.product-card:hover > div:nth-child(2) {
+    display: none;
 }
 
-.old-price{
-    text-decoration: line-through;
-    font-weight: lighter;
-}
-
-.items > .badge{
+.product-hover {
+    display: none;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 8px;
-    right:16px;
-    background-color: red;
-    padding: 10px;
-    border-radius: 50%;
+    background-color: rgba(58, 58, 58, 0.7);
+}
+
+.product-hover-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.product-hover-content > div {
+    display: flex;
+    gap: 12px;
+}
+
+.product-hover-content > div > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-hover-content > div > div > a  {
+    color: #fff;
+}
+
+.product-btn {
+    border: none;
+    background-color: #fff;
+    padding: 15px 25px;
+    color: #B88E2F;
+}
+
+.item-content {
+    display: grid;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.Product-description {
+    color: #898989;
+}
+
+.Product-Price {
+    font-weight: 500;
+}
+
+.old-price {
+    color: #B0B0B0;
+    text-decoration: line-through;
+}
+
+.discount-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #B88E2F;
+    color: #fff;
+    border-radius: 999px;
+    padding: 15px;
+}
+
+.inside{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 240%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.add{
+    background: white;
+    color: #B88E2F;
+    font-size: 16px;
+    padding: 16px 105px;
 }
