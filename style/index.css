@@ -172,6 +172,7 @@ h1{
     row-gap: 10px;
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-bottom: 5rem;
 }
 
 .product-card {
@@ -258,19 +259,126 @@ h1{
     padding: 15px;
 }
 
-.inside{
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 240%;
-    left: 9%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
 .add{
     background: white;
     color: #B88E2F;
     font-size: 16px;
     padding: 16px 105px;
+}
+
+.footer-wrapper{
+    padding: 3rem 5rem;
+    border-top: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.footer-container{
+   display: flex;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 1100px;
+    max-height: 100vh;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.Address{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Address > p{
+    font-weight: 200;
+    color: #9F9F9F;
+}
+
+.Link-section{
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.Link-section >h4{
+    position: absolute;
+    top: -90px;
+    left: -10px;
+    padding: 10px;
+    font-weight: 300;
+    color:  #9F9F9F;
+    font-size: 20px;
+}
+
+.Link-section > ul > li{
+    margin-bottom: 30px;
+}
+
+.Link-section > ul >li >a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.Help{
+    position: relative;
+}
+
+.Help >h4{
+    position: absolute;
+    top: -90px;
+    left: -10px;
+    padding: 10px;
+    font-weight: 300;
+    color:  #9F9F9F;
+    font-size: 20px;
+}
+
+.Help > ul > li{
+    margin-bottom: 30px;
+}
+
+.Help > ul >li >a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.Newsletter{
+    position: relative;
+}
+
+.Newsletter > h4{
+    position: absolute;
+    top: -90px;
+    left: -10px;
+    padding: 10px;
+    font-weight: 300;
+    color:  #9F9F9F;
+    font-size: 20px;
+}
+
+input[type="email"]{
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.submit-btn{
+    padding: 10px;
+    color: #000;
+    border: none;
+    border-bottom:1px solid rgb(38, 36, 36);
+    background: white;
+    cursor: pointer;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footer-bottom > p{
+    text-align: left;
 }
