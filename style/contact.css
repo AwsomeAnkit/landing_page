@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1.2rem 2rem;
+    text-align: left;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon > img {
+    width: 30px !important;
+    margin-right: 10px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.reference {
+    display: flex;
+    gap: 15px;
+}
+
+.reference > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    border: none;
+    background: #fff;
+}
+
+.reference > button > img {
+    height: 18px;
+    width: 18px;
+    padding: 7px;
+}
+
+.reference > button:hover {
+    background: #f4f4f4;
+    cursor: pointer;
+}
+
+.container-wrapper{
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-inside > img{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 1;
+}
+.container-inside > h1{
+    position: absolute;
+    top: 35%;
+    left: 725px;
+    z-index: 1;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.lower-section{
+    position: absolute;
+    top: 49%;
+    left: 740px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-section > button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    padding: 10rem 10rem 10rem 10rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-head > h1{
+    font-size: 300%;
+}
+
+.main-head > p{
+    color: #9F9F9F;
+}
